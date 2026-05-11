@@ -1,7 +1,7 @@
 // src/pages/RegisterPage.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { register, setCurrentUser } from "../api";
+import { register, setCurrentUser } from "../lib/api";
 import logoImg from "../assets/images/logo.png";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";

@@ -1,7 +1,7 @@
 // src/components/Header.jsx — Dark glass rebrand
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { getCurrentUser, logout as apiLogout } from "../api";
+import { getCurrentUser, logout as apiLogout } from "../lib/api";
 import logoImg from "../assets/images/logo.png";
 
 import { GOLD, GOLD_D, NAVY, DARK, WHITE, MUTED, BORDER } from "../theme";

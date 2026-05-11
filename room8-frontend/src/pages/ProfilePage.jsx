@@ -1,7 +1,7 @@
 // src/pages/ProfilePage.jsx
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCurrentUser, setCurrentUser, updateProfile, addPhoto, removePhoto, logout } from "../api";
+import { getCurrentUser, setCurrentUser, updateProfile, addPhoto, removePhoto, logout } from "../lib/api";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, BORDER, SURFACE, MUTED } from "../theme";
 const TEXT = "#FFFFFF";

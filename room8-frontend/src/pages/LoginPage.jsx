@@ -1,7 +1,7 @@
 // src/pages/LoginPage.jsx
 import React, { useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { login as apiLogin, setCurrentUser } from "../api";
+import { login as apiLogin, setCurrentUser } from "../lib/api";
 import logoImg from "../assets/images/logo.png";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";

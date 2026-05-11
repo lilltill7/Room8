@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getCurrentUser, getMatches } from "../api";
+import { getCurrentUser, getMatches } from "../lib/api";
 import { NAVY } from "../theme";
 const BLUE = "#2563EB";
 const BORDER = "#E5E7EB";

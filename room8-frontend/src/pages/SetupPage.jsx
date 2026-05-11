@@ -1,7 +1,7 @@
 // src/pages/SetupPage.jsx — unified 4-step profile setup
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCurrentUser, setCurrentUser, updateProfile, markProfileComplete } from "../api";
+import { getCurrentUser, setCurrentUser, updateProfile, markProfileComplete } from "../lib/api";
 import { SCHOOLS } from "../data/schools";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER, SURFACE } from "../theme";

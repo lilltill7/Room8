@@ -1,7 +1,7 @@
 // src/pages/LikesPage.jsx
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCurrentUser, getLikes, likeUser } from "../api";
+import { getCurrentUser, getLikes, likeUser } from "../lib/api";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";
 const HF = "'Outfit', sans-serif";

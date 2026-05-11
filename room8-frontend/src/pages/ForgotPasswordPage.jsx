@@ -1,7 +1,7 @@
 // src/pages/ForgotPasswordPage.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { forgotPassword } from "../api";
+import { forgotPassword } from "../lib/api";
 import logoImg from "../assets/images/logo.png";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";

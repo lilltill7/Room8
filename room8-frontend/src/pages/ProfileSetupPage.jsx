@@ -1,7 +1,7 @@
 // src/pages/ProfileSetupPage.jsx  —  Step 1 of 3
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCurrentUser, setCurrentUser, updateProfile } from "../api";
+import { getCurrentUser, setCurrentUser, updateProfile } from "../lib/api";
 
 import { NAVY } from "../theme";
 const BLUE = "#2563EB";

@@ -1,7 +1,7 @@
 // src/pages/OnboardingLifestylePage.jsx  —  Step 3 of 3
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCurrentUser, setCurrentUser, updateProfile, markProfileComplete } from "../api";
+import { getCurrentUser, setCurrentUser, updateProfile, markProfileComplete } from "../lib/api";
 import { StepIndicator } from "./ProfileSetupPage";
 import { SectionLabel, OptionCard } from "./OnboardingSchoolPage";
 

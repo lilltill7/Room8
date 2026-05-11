@@ -1,7 +1,7 @@
 // src/pages/ResetPasswordPage.jsx
 import React, { useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { resetPassword } from "../api";
+import { resetPassword } from "../lib/api";
 import logoImg from "../assets/images/logo.png";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";

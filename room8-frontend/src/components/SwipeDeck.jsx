@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import TinderCard from "react-tinder-card";
-import { getCurrentUser, getCandidates, likeUser, skipUser, reportUser, blockUser, resendVerification } from "../api";
+import { getCurrentUser, getCandidates, likeUser, skipUser, reportUser, blockUser, resendVerification } from "../lib/api";
 
 import { NAVY, GOLD, GOLD_D, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";
 

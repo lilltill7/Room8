@@ -4,10 +4,10 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Header        from "./components/Header";
 import Footer        from "./components/Footer";
 import BottomNav     from "./components/BottomNav";
-import ProtectedRoute from "./ProtectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute";
 
-import Home                  from "./Home";
-import Purpose               from "./Purpose";
+import Home                  from "./pages/Home";
+import Purpose               from "./pages/Purpose";
 import SchoolsPage           from "./pages/SchoolsPage";
 import LoginPage             from "./pages/LoginPage";
 import RegisterPage          from "./pages/RegisterPage";
@@ -21,7 +21,7 @@ import ProfilePage             from "./pages/ProfilePage";
 import LikesPage               from "./pages/LikesPage";
 import DiscoverPage            from "./pages/DiscoverPage";
 import SwipeDeck               from "./components/SwipeDeck";
-import MessagesPage            from "./MessagesPage";
+import MessagesPage            from "./pages/MessagesPage";
 
 // Pages that replace the global chrome with their own nav
 const APP_PAGES = ["/app", "/messages", "/discover", "/profile", "/likes", "/setup", "/onboarding/school", "/onboarding/lifestyle", "/profile/setup"];

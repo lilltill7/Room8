@@ -1,7 +1,7 @@
 // src/pages/OnboardingSchoolPage.jsx  —  Step 2 of 3
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCurrentUser, setCurrentUser, updateProfile } from "../api";
+import { getCurrentUser, setCurrentUser, updateProfile } from "../lib/api";
 import { SCHOOLS } from "../data/schools";
 import { StepIndicator } from "./ProfileSetupPage";
 

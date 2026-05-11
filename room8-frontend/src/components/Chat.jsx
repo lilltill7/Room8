@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { getChat, sendMessage as apiSendMessage, reportUser, blockUser, unmatchUser } from "../api";
+import { getChat, sendMessage as apiSendMessage, reportUser, blockUser, unmatchUser } from "../lib/api";
 import { NAVY, GOLD, DARK, DARKER, WHITE, MUTED, BORDER } from "../theme";
 const HF = "'Outfit', sans-serif";
 const BF = "'Inter', sans-serif";

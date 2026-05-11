@@ -5,7 +5,7 @@ import {
   getCurrentUser, likeUser,
   getPosts, createPost, togglePostLike, getReplies, addReply,
   getCompatibility,
-} from "../api";
+} from "../lib/api";
 
 import { NAVY, GOLD, DARK, DARKER, WHITE, BORDER, SURFACE, MUTED, TEXT } from "../theme";
 

@@ -9,6 +9,16 @@ __pycache__/
 # Flask (backend)
 venv/
 instance/
+room8-backend/uploads/
+
+# Images (use Cloudinary/CDN — not git)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.avif
+!room8-frontend/src/assets/**
+!room8-frontend/public/**
 *.sqlite3
 *.db
 *.pyo

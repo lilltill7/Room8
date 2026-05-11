@@ -22,7 +22,7 @@ export default function LikesPage() {
       .then((data) => setFans(Array.isArray(data) ? data : []))
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, []); // eslint-disable-line
+  }, [user?.id, navigate]);
 
   const handleLikeBack = async (fan) => {
     if (liking[fan.id]) return;

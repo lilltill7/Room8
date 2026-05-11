@@ -271,7 +271,7 @@ export default function MessagesPage() {
       })
       .catch(console.error)
       .finally(() => setMatchesLoading(false));
-  }, []); // eslint-disable-line
+  }, [user?.id]);
 
   const handleSelect = useCallback((match) => {
     setSelected(match);

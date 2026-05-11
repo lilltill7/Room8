@@ -17,7 +17,7 @@ export default function MatchList({ onSelectMatch, selectedId }) {
       .then(setMatches)
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, []); // eslint-disable-line
+  }, [user?.id]);
 
   if (loading) {
     return <p style={{ color: MUTED, fontSize: "0.85rem", padding: "8px 0" }}>Loading…</p>;

@@ -396,7 +396,8 @@ export default function SwipeDeck() {
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => { loadCandidates(false); }, []); // eslint-disable-line
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { loadCandidates(false); }, []);
 
   const showToast = (msg) => {
     setMatchToast(msg);

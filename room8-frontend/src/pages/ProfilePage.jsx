@@ -248,7 +248,7 @@ export default function ProfilePage() {
     setPhotos(user.photos || []);
     setPrefs(user.dorm_prefs || {});
     setLookingFor(user.looking_for || "");
-  }, []); // eslint-disable-line
+  }, []); // eslint-disable-next-line react-hooks/exhaustive-deps — intentionally runs once to populate form on mount
 
   const update = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 

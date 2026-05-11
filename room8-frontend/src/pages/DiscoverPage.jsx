@@ -188,7 +188,7 @@ function CommunityBoard({ user }) {
       .then(setPosts)
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, []); // eslint-disable-line
+  }, [user.id]);
 
   const handlePost = async (e) => {
     e.preventDefault();
@@ -406,7 +406,7 @@ function CompatibilityTab({ user }) {
       .then(setMatches)
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, []); // eslint-disable-line
+  }, [user.id]);
 
   if (loading) {
     return <div style={{ display: "flex", justifyContent: "center", padding: "60px 0" }}><Spinner /></div>;
@@ -504,7 +504,7 @@ export default function DiscoverPage() {
 
   useEffect(() => {
     if (!user) navigate("/login");
-  }, []); // eslint-disable-line
+  }, [user, navigate]);
 
   if (!user) return null;
 

@@ -131,15 +131,16 @@ function ParticleCanvas({ mouseRef }) {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const W = canvas.offsetWidth || window.innerWidth;
-    const H = canvas.offsetHeight || window.innerHeight;
+    const parent = canvas.parentElement;
+    const W = parent.clientWidth  || window.innerWidth;
+    const H = parent.clientHeight || window.innerHeight;
 
     const scene  = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, W / H, 0.1, 100);
     camera.position.z = 8;
 
     const renderer = new THREE.WebGLRenderer({ canvas, alpha:true, antialias:true });
-    renderer.setSize(W, H);
+    renderer.setSize(W, H, false);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     // Blue-indigo particles
@@ -177,8 +178,8 @@ function ParticleCanvas({ mouseRef }) {
     scene.add(group); scene.add(goldMesh);
 
     const onResize = () => {
-      const w=canvas.offsetWidth, h=canvas.offsetHeight;
-      camera.aspect=w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h);
+      const w=parent.clientWidth, h=parent.clientHeight;
+      camera.aspect=w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h,false);
     };
     window.addEventListener("resize", onResize);
 

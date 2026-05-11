@@ -9,11 +9,17 @@ PAGE_SIZE = 20
 
 @board_bp.get("")
 def list_posts():
+    from room8_models.user import User
     viewer_id = request.args.get("user_id", type=int)
-    offset    = request.args.get("offset", 0, type=int)
+    school    = request.args.get("school",  type=str)
+    offset    = request.args.get("offset",  0, type=int)
+
+    query = Post.query.join(User, Post.user_id == User.id)
+    if school:
+        query = query.filter(User.school == school)
 
     posts = (
-        Post.query
+        query
         .order_by(Post.created_at.desc())
         .offset(offset)
         .limit(PAGE_SIZE)

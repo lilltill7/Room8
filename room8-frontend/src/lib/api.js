@@ -196,8 +196,9 @@ export function getCompatibility(userId) {
 }
 
 // ---------------- Community Board ----------------
-export function getPosts(userId, offset = 0) {
-  return doFetch(`${API_URL}/api/board?user_id=${userId}&offset=${offset}`);
+export function getPosts(userId, offset = 0, school = "") {
+  const s = school ? `&school=${encodeURIComponent(school)}` : "";
+  return doFetch(`${API_URL}/api/board?user_id=${userId}&offset=${offset}${s}`);
 }
 
 export function createPost(userId, content) {

@@ -184,11 +184,11 @@ function CommunityBoard({ user }) {
   // DARK, DARKER used below via closure
 
   useEffect(() => {
-    getPosts(user.id)
+    getPosts(user.id, 0, user.school)
       .then(setPosts)
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, [user.id]);
+  }, [user.id, user.school]);
 
   const handlePost = async (e) => {
     e.preventDefault();

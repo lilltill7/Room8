@@ -1,0 +1,10 @@
+export const NAVY    = "#0F2D5E";
+export const GOLD    = "#F59E0B";
+export const GOLD_D  = "#D97706";
+export const DARK    = "#050D1F";
+export const DARKER  = "#030914";
+export const WHITE   = "#FFFFFF";
+export const MUTED   = "rgba(255,255,255,0.45)";
+export const BORDER  = "rgba(255,255,255,0.1)";
+export const SURFACE = "rgba(255,255,255,0.05)";
+export const TEXT    = "rgba(255,255,255,0.88)";
